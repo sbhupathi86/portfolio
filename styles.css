@@ -486,4 +486,31 @@ input:focus, textarea:focus {
     background: linear-gradient(45deg, var(--accent-light), var(--secondary-light));
     z-index: -1;
     animation: rotate 4s linear infinite;
+}
+
+/* Skills Visualization in Hero */
+.skills-visualization {
+    max-width: 600px;
+    margin: var(--spacing-md) auto;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-visualization img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.skills-visualization img:hover {
+    opacity: 1;
+}
+
+/* Adjust responsive design for skills visualization */
+@media (max-width: 768px) {
+    .skills-visualization {
+        max-width: 100%;
+        margin: var(--spacing-sm) auto;
+    }
 } 
